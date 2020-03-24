@@ -2,6 +2,9 @@
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <button @click="add1">加一</button>
+    {{count}}
   </div>
 </template>
 
@@ -13,6 +16,16 @@ export default {
   name: 'Home',
   components: {
     HelloWorld
-  }
+  },
+    methods:{
+     add1(){
+         this.$store.commit('add1')
+     }
+    },
+   computed:{
+      count(){
+          return this.$store.state.count
+      }
+   }
 }
 </script>
