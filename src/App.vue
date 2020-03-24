@@ -35,4 +35,5 @@
 .hot_fix{
 
 }
+.hot_fix2{}
 </style>
