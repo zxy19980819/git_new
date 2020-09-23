@@ -4,7 +4,6 @@
     <HelloWorld msg="Welcome to Your Vue.js App"/>
 
     <button @click="add1">加一</button>
-    <button>dev</button>
     {{count}}
   </div>
 </template>
